@@ -2,14 +2,14 @@
 Phoenix2 code in dev
 
 ## Dependency
-module load cuda11.8/toolkit/11.8.0
+- module load cuda11.8/toolkit/11.8.0
 
-pip3 install -U xformers --index-url https://download.pytorch.org/whl/cu118
-pip install packaging
-pip uninstall -y ninja && pip install ninja
-pip install flash-attn --no-build-isolation
+- pip3 install -U xformers --index-url https://download.pytorch.org/whl/cu118
+- pip install packaging
+- pip uninstall -y ninja && pip install ninja
+- pip install flash-attn --no-build-isolation
 
-pip install -r requirements.txt tokenizers sentencepiece
+- pip install -r requirements.txt tokenizers sentencepiece
 
 ## Structure
 

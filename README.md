@@ -13,7 +13,7 @@ pip install -r requirements.txt tokenizers sentencepiece
 
 ## Structure
 
-- TinyLlama_FSDP: 原来的预训练代码
+- TinyLlama: 原来的预训练代码
 - TinyLlama_deepspeed_check1： 利用Deepspeed策略
     - pip install deepspeed
     - 文档:

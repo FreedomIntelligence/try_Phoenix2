@@ -32,7 +32,7 @@ do
 		--accelerator=cuda \
 		--devices=8 \
 		--num-nodes=10 \
-		pretrain/tinyllama.py --devices 8 --train_data_dir data/slim_star  --val_data_dir data/slim_star
+		/TinyLlama/pretrain/tinyllama.py --devices 8 --train_data_dir data/slim_star  --val_data_dir data/slim_star
 done
 
 # 等待所有后台任务完成

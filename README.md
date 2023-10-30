@@ -27,8 +27,8 @@ Phoenix2 code in dev
     - 改动: 
         - 为了用checkpointing技术: lit-gpt/model/gpt.foward line 69-119
 - TinyLlama_collosal： 
-    - lightening collosal 需要torch<2.0 放弃
-
+    - 改动: 
+        - 更换策略: pretrain.py line 10, 95
 
 ## Usage
 
@@ -46,7 +46,7 @@ python scripts/prepare_slimpajama.py --source_path /path/to/SlimPajama --tokeniz
 ### 多节点训练
 
 ```
-bash 
+sbatch multinode_pretrain.sh
 ```
 
 
@@ -95,3 +95,7 @@ Recommand_Strategy:
 +--------+------+------+------+---------------------------+-----------------+
 Please find the best batch_size by adjusting BATCH_SIZE
 ```
+
+
+## To do list
+Use Deepspeed/ Collasal AI/ Megatron-deepspeed to reconstruct the code respectively. 

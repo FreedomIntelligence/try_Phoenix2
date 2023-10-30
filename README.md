@@ -24,14 +24,8 @@ pip install -r requirements.txt tokenizers sentencepiece
         - 为了用checkpointing技术: pretrain.py line 141
         - scripts/convert_zero_checkpoint.py Zero3 checkpoint转换
 - TinyLlama_deepspeed_check2： 利用Deepspeed策略
-    - pip install deepspeed
-    - 文档:
-        - 代码: https://lightning.ai/docs/pytorch/stable/advanced/model_parallel/deepspeed.html
-        - 参数: https://lightning.ai/docs/pytorch/stable/api/lightning.pytorch.strategies.DeepSpeedStrategy.html#lightning.pytorch.strategies.DeepSpeedStrategy
     - 改动: 
-        - 更换策略: pretrain.py line 10, 95
         - 为了用checkpointing技术: lit-gpt/model/gpt.foward line 69-119
-        - Zero3 checkpoint转换: scripts/convert_zero_checkpoint.py 
 - TinyLlama_collosal： 
     - lightening collosal 需要torch<2.0 放弃
 
